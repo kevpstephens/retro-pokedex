@@ -99,6 +99,28 @@ button:hover {
 }
 
 /* ============================================================
+    Headers (h1)
+============================================================ */
+
+h1 {
+  color: white;
+  font-family: "Press Start 2P", monospace;
+  text-align: center;
+  /* text-shadow:
+    -2px -2px 0 #000,  
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000; creates a black outline */
+}
+
+h1 {
+  color: white;
+  -webkit-text-stroke: 3px black;
+  font-size: 60px;
+  margin: -1rem;
+}
+
+/* ============================================================
     Pokemon Display Card Header
 ============================================================ */
 .card-header {
@@ -371,4 +393,53 @@ button:hover {
 .pokemon-nav button:disabled {
   opacity: 0.4;
   cursor: not-allowed;
+}
+
+/* ============================================================
+    Home Button
+============================================================ */
+
+.home-button {
+  position: absolute;
+  left: 27.5rem;
+  top: 4.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 1rem;
+}
+
+.home-button img {
+  width: 50px;
+  height: auto;
+  border: 3px solid #000;
+  border-radius: 20px;
+  transition: transform 0.2s ease;
+  filter: brightness(0.8) contrast(0.8) saturate(5);
+}
+
+.home-button:hover img {
+  transform: scale(1.1);
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: relative;
+  top: -90px;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: monospace;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.home-button:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
 }

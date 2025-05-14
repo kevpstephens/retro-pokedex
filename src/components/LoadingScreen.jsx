@@ -1,7 +1,8 @@
 function LoadingScreen() {
   return (
     <>
-      <p>brb finding your Pokémon...</p>
+      <br />
+      <p>Pls wait while I catch that Pokémon...</p>
       <div className="pokeball-loader" aria-label="Loading..."></div>
     </>
   );

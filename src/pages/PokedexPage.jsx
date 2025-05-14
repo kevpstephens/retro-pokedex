@@ -1,17 +1,21 @@
 // External Libraries
 import { useEffect, useState } from "react";
 // Global Styles
-import "./styles/App.css";
+import "/src/styles/App.css";
 // Components
-import SearchForm from "./components/SearchForm";
-import PokemonDisplay from "./components/PokemonDisplay";
-import StatsChart from "./components/StatsChart";
-import ErrorScreen from "./components/ErrorScreen";
-import LoadingScreen from "./components/LoadingScreen";
+import {
+  ErrorScreen,
+  Header,
+  HomeButton,
+  LoadingScreen,
+  PokemonDisplay,
+  PokemonNav,
+  SearchForm,
+  StatsChart,
+} from "../components";
 // API/Data
-import getPokemonByName from "./api";
-import dummyPikachu from "./data/dummyPikachu";
-import PokemonNav from "./components/PokemonNavigator";
+import getPokemonByName from "../api/api";
+import dummyPikachu from "../data/dummyPikachu";
 
 function App() {
   // const [pokemon, setPokemon] = useState(dummyPikachu);
@@ -51,7 +55,8 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>Pokédex</h1>
+      <HomeButton />
+      <Header />
 
       <SearchForm
         searchTerm={searchTerm}
@@ -74,6 +79,7 @@ function App() {
           const randomId = Math.floor(Math.random() * 1025) + 1;
           getPokemon(randomId.toString());
         }}
+        pokemon={pokemon}
       />
 
       {loading ? (

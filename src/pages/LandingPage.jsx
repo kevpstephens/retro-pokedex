@@ -22,12 +22,12 @@ function LandingPage() {
 
       <div className="pikachu-wrapper">
         <img
-          src="public/pikachu-waving.png"
+          src="src/assets/pikachu-waving.png"
           alt="Modern Pikachu"
           className="pikachu modern"
         />
         <img
-          src="public/pikachu-retro.png"
+          src="src/assets/pikachu-retro.png"
           alt="Retro Pikachu"
           className="pikachu retro"
         />
