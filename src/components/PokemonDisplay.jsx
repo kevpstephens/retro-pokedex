@@ -35,24 +35,22 @@ function PokemonDisplay({ pokemon }) {
       </div>
       <img src={imageUrl} alt={`${pokemon.name} image`} />
       <ul style={{ listStyle: "none" }}>
-        <li>
-          Type:{" "}
-          <div className="type-badge-wrapper">
-            {pokemonType.map((type) => (
-              <li
-                key={type}
-                className="type-badge"
-                style={{
-                  backgroundColor: typeColors[type] || "#ccc",
-                  color: "#000",
-                  marginRight: "0.5rem",
-                }}
-              >
-                {type}
-              </li>
-            ))}
-          </div>
-        </li>
+        Type:{" "}
+        <div className="type-badge-wrapper">
+          {pokemonType.map((type) => (
+            <li
+              key={type}
+              className="type-badge"
+              style={{
+                backgroundColor: typeColors[type] || "#ccc",
+                color: "#000",
+                marginRight: "0.5rem",
+              }}
+            >
+              {type}
+            </li>
+          ))}
+        </div>
         <li>Height: {pokemon.height / 10}m </li>
         <li>Weight: {pokemon.weight * 0.1}kg</li>
         <li>
