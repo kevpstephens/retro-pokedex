@@ -5,7 +5,7 @@ function ErrorScreen({ errorMessage }) {
       <div className="gameboy-screen">
         <img
           id="missing-no-image"
-          src="src/assets/MissingNo.svg.png"
+          src="../src/assets/MissingNo.svg.png"
           alt="missing-no-image"
         />
       </div>

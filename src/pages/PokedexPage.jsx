@@ -1,5 +1,6 @@
 // External Libraries
 import { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 // Global Styles
 import "/src/styles/App.css";
 // Components
@@ -25,9 +26,13 @@ function App() {
   const [error, setError] = useState(null);
   const maxPokemonId = 1025;
 
+  const { id } = useParams(); // gets the :id from the URL
+  const navigate = useNavigate(); // we'll use this to navigate on button clicks
+
   useEffect(() => {
-    getPokemon("pikachu");
-  }, []);
+    if (!id) return;
+    getPokemon(id);
+  }, [id]);
 
   async function getPokemon(name) {
     setLoading(true);
@@ -49,8 +54,7 @@ function App() {
     if (!searchTerm) {
       return null;
     }
-
-    getPokemon(searchTerm);
+    navigate(`/pokedex/${searchTerm.toLocaleLowerCase()}`);
   }
 
   return (
@@ -67,17 +71,17 @@ function App() {
 
       <PokemonNav
         currentId={pokemon.id}
-        onPrev={() => {
-          const prevId = pokemon.id <= 1 ? maxPokemonId : pokemon.id - 1;
-          getPokemon(prevId.toString());
-        }}
         onNext={() => {
           const nextId = pokemon.id >= maxPokemonId ? 1 : pokemon.id + 1;
-          getPokemon(nextId.toString());
+          navigate(`/pokedex/${nextId}`);
+        }}
+        onPrev={() => {
+          const prevId = pokemon.id <= 1 ? maxPokemonId : pokemon.id - 1;
+          navigate(`/pokedex/${prevId}`);
         }}
         onRandom={() => {
-          const randomId = Math.floor(Math.random() * 1025) + 1;
-          getPokemon(randomId.toString());
+          const randomId = Math.floor(Math.random() * maxPokemonId) + 1;
+          navigate(`/pokedex/${randomId}`);
         }}
         pokemon={pokemon}
       />
