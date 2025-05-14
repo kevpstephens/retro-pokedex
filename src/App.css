@@ -1,0 +1,374 @@
+/* ============================================================
+   RESET + BASE STYLES
+============================================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Press Start 2P", monospace;
+  /* font-family: sans-serif; */
+  background-color: #ffffff;
+  color: #ffffff;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+:root {
+  /* CSS variables can go here if needed */
+}
+
+/* ============================================================
+   LAYOUT CONTAINERS
+============================================================ */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ============================================================
+   TYPOGRAPHY
+============================================================ */
+h1,
+h2,
+h3 {
+  margin-bottom: 0rem;
+}
+
+/* ============================================================
+   STRUCTURAL ELEMENTS
+============================================================ */
+section,
+div,
+article,
+form {
+  background-color: rgb(166, 65, 75);
+  padding: 1rem;
+  border-radius: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================================
+   FORMS + INPUTS
+============================================================ */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  padding: 0.5rem;
+  margin-top: 0rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+}
+
+form input {
+  width: 40%;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  width: 5rem;
+}
+
+button:hover {
+  /* background-color: #0056b3; */
+}
+
+#search-and-submit {
+  margin-top: 0rem;
+  padding: 0rem;
+}
+
+/* ============================================================
+    Pokemon Display Card Header
+============================================================ */
+.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  border: 2px inset #444;
+  border: black;
+  border-style: dashed;
+  padding: 10px;
+  /* background-color: #c4e17f; Game Boy light green (optional) */
+}
+
+.poke-id-circle {
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  width: 60px;
+  height: 60px;
+  background-color: #222;
+  color: #fff;
+  font-weight: bold;
+  font-family: monospace;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  border: rgb(255, 255, 255);
+  border-style: null;
+}
+
+.pokemon-name {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 70%; /* 🔧 controls width */
+  max-width: 300px; /* optional */
+  margin: 0 auto; /* centers it */
+  text-align: center;
+}
+
+/* ============================================================
+   Pokeball Button
+============================================================ */
+.search-bar-wrapper {
+  /* display: flex; */
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-bar-wrapper input {
+  height: 40px;
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.pokeball-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background: linear-gradient(to bottom, red 50%, white 50%);
+  position: relative;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+/* Center circle */
+.pokeball-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Band */
+.pokeball-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 4px;
+  background: black;
+  z-index: 0;
+}
+
+.pokeball-button:hover {
+  background: linear-gradient(to bottom, white 50%, red 50%);
+}
+
+/* ============================================================
+   Pokeball Loading...
+============================================================ */
+.pokeball-loader {
+  width: 60px;
+  height: 60px;
+  border: 4px solid black;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, red 50%, white 50%);
+  position: relative;
+  margin: 2rem auto;
+  animation: spin 1s linear infinite;
+}
+
+/* Center circle */
+.pokeball-loader::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* Horizontal band */
+.pokeball-loader::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 6px;
+  background: black;
+  z-index: 1;
+}
+
+/* Spin animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ============================================================
+   Pokemon Retro Display Card...
+============================================================ */
+#pokemon-display-card {
+  background-color: #677c0c; /* Game Boy green */
+  border: 5px solid #0f380f;
+  border-radius: 30px;
+  padding: 1rem;
+  color: #000000;
+  font-family: "Press Start 2P", monospace; /* Optional retro font */
+  font-weight: bolder;
+  text-align: center;
+  max-width: auto;
+  margin: 1rem auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  background-image: repeating-linear-gradient(
+    0deg,
+    #95a968,
+    #a6b87a 2px,
+    #90a262 2px,
+    #a0b073 4px
+  );
+}
+
+/* ============================================================
+   Pokemon Type Badge
+============================================================ */
+.type-badge {
+  display: block;
+  margin: 1px;
+  text-align: center;
+  display: inline-block;
+  padding: 0rem 0.75rem;
+  border-radius: 100px;
+  background-color: #ffeb3b; /* electric yellow */
+}
+
+/* ============================================================
+   Error Message + Missing-No
+============================================================ */
+
+#missing-no-image {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+.gameboy-screen {
+  background-color: #7b8f3a;
+  border: 4px solid #0f380f;
+  border-radius: 20px;
+  padding: 1.5rem;
+  max-width: 280px;
+  margin: 1rem auto;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  background-image: repeating-linear-gradient(
+    0deg,
+    #95a968,
+    #a6b87a 2px,
+    #90a262 2px,
+    #a0b073 4px
+  );
+}
+
+/* ============================================================
+    Type Badge Wrapper
+============================================================ */
+
+.type-badge-wrapper {
+  padding: 0.5rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+/* ============================================================
+    Navigation Buttons
+============================================================ */
+.pokemon-nav {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: -1rem 0;
+}
+
+.pokemon-nav button {
+  font-family: "Press Start 2P", monospace;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 120px;
+  background-color: #ae6363;
+  color: #ffffff;
+  border: 2px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.pokemon-nav button:hover {
+  background-image: repeating-linear-gradient(
+    0deg,
+    #95a968,
+    #a6b87a 2px,
+    #90a262 2px,
+    #a0b073 4px
+  );
+  color: #000000;
+  font-weight: bold;
+}
+
+.pokemon-nav button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
