@@ -1,7 +1,7 @@
 // External Libraries
 import { useEffect, useState } from "react";
 // Global Styles
-import "./App.css";
+import "./styles/App.css";
 // Components
 import SearchForm from "./components/SearchForm";
 import PokemonDisplay from "./components/PokemonDisplay";
@@ -64,7 +64,7 @@ function App() {
         currentId={pokemon.id}
         onPrev={() => {
           const prevId = pokemon.id <= 1 ? maxPokemonId : pokemon.id - 1;
-          getPokemon((prevId).toString());
+          getPokemon(prevId.toString());
         }}
         onNext={() => {
           const nextId = pokemon.id >= maxPokemonId ? 1 : pokemon.id + 1;

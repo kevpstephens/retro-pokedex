@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import "../../src/LandingPage.css";
+import "../styles/LandingPage.css";
 
 function LandingPage() {
   const navigate = useNavigate();
@@ -8,7 +8,7 @@ function LandingPage() {
     <div className="landing-page">
       <h1>Welcome to the Retro Pokédex!</h1>
 
-      <button onClick={() => navigate("/pokedex")} className="enter-button">
+          <button onClick={() => navigate("/pokedex")} className="enter-button">
         Enter Pokédex
       </button>
 
