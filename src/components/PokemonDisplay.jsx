@@ -38,6 +38,7 @@ function PokemonDisplay({ pokemon }) {
         Type:{" "}
         <div className="type-badge-wrapper">
           {pokemonType.map((type) => (
+            
             <li
               key={type}
               className="type-badge"

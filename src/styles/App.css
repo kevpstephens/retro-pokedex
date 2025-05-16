@@ -94,7 +94,8 @@ button:hover {
 }
 
 #search-and-submit {
-  margin-top: 0rem;
+  position: relative;
+  margin-top: -7rem;
   padding: 0rem;
 }
 
@@ -400,14 +401,14 @@ h1 {
 ============================================================ */
 
 .home-button {
-  position: absolute;
-  left: 27.5rem;
-  top: 4.5rem;
+  position: relative;
+  top: -5rem;
+  right: 15rem;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0;
-  margin: 1rem;
+  padding: 0px;
+  margin: 0rem;
 }
 
 .home-button img {

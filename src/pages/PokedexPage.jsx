@@ -53,14 +53,15 @@ function App() {
     event.preventDefault();
     if (!searchTerm) {
       return null;
+    } else {
+      navigate(`/pokedex/${searchTerm.toLocaleLowerCase()}`);
     }
-    navigate(`/pokedex/${searchTerm.toLocaleLowerCase()}`);
   }
 
   return (
     <div className="app-container">
-      <HomeButton />
       <Header />
+      <HomeButton />
 
       <SearchForm
         searchTerm={searchTerm}

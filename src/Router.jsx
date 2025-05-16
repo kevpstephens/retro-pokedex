@@ -5,8 +5,9 @@ import PokedexPage from "./pages/PokedexPage";
 function AppRouter() {
   return (
     <Routes>
-      <Route path="/" element={<LandingPage />} />
+      <Route path="/" element={<LandingPage />} /> {/*Home page*/}
       <Route path="/pokedex" element={<Navigate to="/pokedex/25" />} />
+      <Route path="/pokedex" element={<PokedexPage />} />
       <Route path="/pokedex/:id" element={<PokedexPage />} />
     </Routes>
   );
