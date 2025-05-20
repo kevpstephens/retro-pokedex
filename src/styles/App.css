@@ -170,7 +170,7 @@ h1 {
 }
 
 /* ============================================================
-   Pokeball Button
+   Pokeball Submit Button
 ============================================================ */
 .search-bar-wrapper {
   /* display: flex; */
@@ -226,8 +226,45 @@ h1 {
 }
 
 .pokeball-button:hover {
-  background: linear-gradient(to bottom, white 50%, red 50%);
+  animation: spinAndPulse 0.75s infinite ease-in-out;
 }
+
+@keyframes spinAndPulse {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  10% {
+    transform: rotate(36deg) scale(1.03);
+  }
+  20% {
+    transform: rotate(72deg) scale(1.06);
+  }
+  30% {
+    transform: rotate(108deg) scale(1.09);
+  }
+  40% {
+    transform: rotate(144deg) scale(1.12);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.15);
+  }
+  60% {
+    transform: rotate(216deg) scale(1.12);
+  }
+  70% {
+    transform: rotate(252deg) scale(1.09);
+  }
+  80% {
+    transform: rotate(288deg) scale(1.06);
+  }
+  90% {
+    transform: rotate(324deg) scale(1.03);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
 
 /* ============================================================
    Pokeball Loading...
@@ -444,3 +481,5 @@ h1 {
   visibility: visible;
   opacity: 1;
 }
+
+

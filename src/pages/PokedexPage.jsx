@@ -9,8 +9,8 @@ import {
   Header,
   HomeButton,
   LoadingScreen,
+  NavigationBar,
   PokemonDisplay,
-  PokemonNav,
   SearchForm,
   StatsChart,
 } from "../components";
@@ -70,7 +70,7 @@ function App() {
         setError={setError}
       />
 
-      <PokemonNav
+      <NavigationBar
         currentId={pokemon.id}
         onNext={() => {
           const nextId = pokemon.id >= maxPokemonId ? 1 : pokemon.id + 1;

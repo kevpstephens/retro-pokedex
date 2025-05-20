@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-function PokemonNav({ currentId, onNext, onPrev, onRandom, pokemon }) {
+function NavigationBar({ currentId, onNext, onPrev, onRandom, pokemon }) {
   useEffect(() => {
     function handleKeyDown(event) {
       console.log("keydown registered")
@@ -25,4 +25,4 @@ function PokemonNav({ currentId, onNext, onPrev, onRandom, pokemon }) {
   );
 }
 
-export default PokemonNav;
+export default NavigationBar;

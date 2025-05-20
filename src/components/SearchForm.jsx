@@ -20,7 +20,7 @@ function SearchForm({ searchTerm, setSearchTerm, handleSearch, setError }) {
           }}
         />
         <button className="pokeball-button" type="submit">
-          <span className="button-text"></span>
+          <span className="tooltip-text"></span>
         </button>
       </form>
     </section>
