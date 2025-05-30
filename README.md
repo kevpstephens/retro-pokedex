@@ -1,6 +1,8 @@
 # The Retro Pokédex
 
-A nostalgic React-based app that emulates the classic Pokemon player experience of exploring a Pokedex - styled in a manner that is reminiscent of an old-school Game Boy interface.
+A React-based app that emulates the classic Pokemon player experience of exploring a Pokédex - styled in a manner that is reminiscent of an old-school Game Boy interface.
+<br>
+Here's to hoping that, you too, will slide into the deep depths of nostalgia as you navigate this Pokédex! Have fun! 
 
 <table>
   <tr>
@@ -19,21 +21,21 @@ A nostalgic React-based app that emulates the classic Pokemon player experience 
 
 ---
 
-## 📦 Features
+# 📦 Features
 
-- 🔍 **Search Pokémon** by name or ID
-- 🎲 **Random**, **Next**, and **Previous** Pokémon navigation
-- 🧭 **URL-based navigation** with scroll position memory
-- 🎨 Game Boy–style **pixel art UI** with animated Pokéball
-- 🏠 Custom landing page with **hover-activated retro Pikachu**
-- 🔁 Custom hover transitions and tooltips
-- 🧪 Error handling for invalid searches and missing data
+    •	🔍 Search Pokémon by name or ID
+    •	🎲 Random, Next, and Previous Pokémon navigation
+    •	🧭 URL-based navigation** with scroll position memory
+    •	🎨 Game Boy–style pixel art UI with animated Pokéball
+    •	🏠 Custom landing page with hover-activated retro Pikachu
+    •	🔁 Custom hover transitions and tooltips
+    •	🧪 Error handling for invalid searches and missing data
 
 <br>
 
 ---
 
-## 🚀 Getting Started
+# 🚀 Getting Started
 
 ### 1. Clone the repository:
 
@@ -62,7 +64,7 @@ npm run dev
 
 <br>
 
-## 🛠️ Tech Stack:
+# 🛠️ Tech Stack:
 
     •	React.js – Frontend framework
     •	React Router – For routing between pages and dynamic Pokémon views
@@ -70,3 +72,11 @@ npm run dev
     •	Axios – For fetching data from the PokéAPI
     •	Vite – Lightning-fast build tool
     •	Custom CSS – For Game Boy–inspired UI and animations
+
+# 💡 Considering Future Enhancements:
+	•	🧬 Evolution Chain Tab
+	•	📜 Pokémon descriptions and abilities
+	•	🔊 Background music toggle
+	•	🗺️ Region filtering (Kanto, Johto, etc.)
+	•	🧪 Unit tests with Jest + React Testing Library
+
