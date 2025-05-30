@@ -26,8 +26,8 @@ function App() {
   const [error, setError] = useState(null);
   const maxPokemonId = 1025;
 
-  const { id } = useParams(); // gets the :id from the URL
-  const navigate = useNavigate(); // we'll use this to navigate on button clicks
+  const { id } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (!id) return;
