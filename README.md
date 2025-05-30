@@ -25,7 +25,7 @@ Here's to hoping that, you too, will slide into the deep depths of nostalgia as 
 
     •	🔍 Search Pokémon by name or ID
     •	🎲 Random, Next, and Previous Pokémon navigation
-    •	🧭 URL-based navigation** with scroll position memory
+    •	🧭 URL-based navigation with scroll position memory
     •	🎨 Game Boy–style pixel art UI with animated Pokéball
     •	🏠 Custom landing page with hover-activated retro Pikachu
     •	🔁 Custom hover transitions and tooltips
