@@ -2,13 +2,15 @@
 
 A React-based app that emulates the classic Pokemon player experience of exploring a Pokédex - styled in a manner that is reminiscent of an old-school Game Boy interface.
 <br>
-Here's to hoping that, you too, will slide into the deep depths of nostalgia as you navigate this Pokédex! Have fun! 
+Here's to hoping that, you too, will slide into the deep depths of nostalgia as you navigate this Pokédex! Have fun!
+
+<div align="center">
 
 <table>
   <tr>
     <td align="center">
       <a href="./public/pokedex-landingpage-screenshot.png">
-        <img src="./public/pokedex-landingpage-screenshot.png" alt="Landing Page" height="200" />
+        <img src="./public/pokedex-landingpage-screenshot.png" alt="Landing Page" height="300" width="400" />
       </a>
     </td>
     <td align="center">
@@ -18,6 +20,8 @@ Here's to hoping that, you too, will slide into the deep depths of nostalgia as 
     </td>
   </tr>
 </table>
+
+</div>
 
 ---
 
@@ -74,9 +78,9 @@ npm run dev
     •	Custom CSS – For Game Boy–inspired UI and animations
 
 # 💡 Considering Future Enhancements:
-	•	🧬 Evolution Chain Tab
-	•	📜 Pokémon descriptions and abilities
-	•	🔊 Background music toggle
-	•	🗺️ Region filtering (Kanto, Johto, etc.)
-	•	🧪 Unit tests with Jest + React Testing Library
 
+    •	🧬 Evolution Chain Tab
+    •	📜 Pokémon descriptions and abilities
+    •	🔊 Background music toggle
+    •	🗺️ Region filtering (Kanto, Johto, etc.)
+    •	🧪 Unit tests with Jest + React Testing Library
