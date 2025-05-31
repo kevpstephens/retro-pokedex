@@ -37,7 +37,7 @@ Here's to hoping that, you too, will slide into the deep depths of nostalgia as 
 
 ---
 
-<h1 align="center">📦 Features</h1>
+<h1 align="center">📦 Features 📦</h1>
 
     •	🔍 Search Pokémon by name or ID
     •	🎲 Random, Next, and Previous Pokémon navigation
@@ -51,7 +51,7 @@ Here's to hoping that, you too, will slide into the deep depths of nostalgia as 
 
 ---
 
-<h1 align="center">🚀 Getting Started</h1>
+<h1 align="center">🚀 Getting Started 🚀</h1>
 
 ### 1. Clone the repository:
 
@@ -81,7 +81,7 @@ npm run dev
 <br>
 <br>
 
-<h1 align="center">🛠️ Tech Stack</h1>
+<h1 align="center">🛠️ Tech Stack 🛠️</h1>
 
     •	React.js – Frontend framework
     •	React Router – For routing between pages and dynamic Pokémon views
@@ -92,7 +92,7 @@ npm run dev
 
 <br>
 
-<h1 align="center">💡 Potential Future Enhancements:</h1>
+<h1 align="center">🤔 Potential Future Enhancements 🤔</h1>
 
     •	🧬 Evolution Chain Tab
     •	📜 Pokémon descriptions and abilities
