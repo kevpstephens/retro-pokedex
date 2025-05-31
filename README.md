@@ -1,11 +1,22 @@
-# The Retro Pokédex
+<div align="center">
+<h1>The Retro Pokédex</h1>
+</div>
+
+<div align="center">
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge)
+![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white)
+![PokéAPI](https://img.shields.io/badge/PokeAPI-FFCB05?style=for-the-badge&logo=pokemon&logoColor=white)
+
+</div>
 
 A React-based app that emulates the classic Pokémon player experience of exploring a Pokédex - styled in a manner that is reminiscent of an old-school Game Boy interface.
 <br>
 Here's to hoping that, you too, will slide into the deep depths of nostalgia as you navigate this Pokédex! Have fun!
 
 <div align="center">
-
 <table>
   <tr>
     <td align="center">
@@ -20,12 +31,13 @@ Here's to hoping that, you too, will slide into the deep depths of nostalgia as 
     </td>
   </tr>
 </table>
-
 </div>
+
+<br>
 
 ---
 
-# 📦 Features
+<h1 align="center">📦 Features</h1>
 
     •	🔍 Search Pokémon by name or ID
     •	🎲 Random, Next, and Previous Pokémon navigation
@@ -39,7 +51,7 @@ Here's to hoping that, you too, will slide into the deep depths of nostalgia as 
 
 ---
 
-# 🚀 Getting Started
+<h1 align="center">🚀 Getting Started</h1>
 
 ### 1. Clone the repository:
 
@@ -50,7 +62,7 @@ cd retro-pokedex
 
 <br>
 
-### 2. Clone the repository:
+### 2. Install dependencies:
 
 ```bash
 npm install
@@ -67,8 +79,9 @@ npm run dev
 > Open http://localhost:5173 to view it in your browser.
 
 <br>
+<br>
 
-# 🛠️ Tech Stack:
+<h1 align="center">🛠️ Tech Stack</h1>
 
     •	React.js – Frontend framework
     •	React Router – For routing between pages and dynamic Pokémon views
@@ -77,7 +90,9 @@ npm run dev
     •	Vite – Lightning-fast build tool
     •	Custom CSS – For Game Boy–inspired UI and animations
 
-# 💡 Considering Future Enhancements:
+<br>
+
+<h1 align="center">💡 Potential Future Enhancements:</h1>
 
     •	🧬 Evolution Chain Tab
     •	📜 Pokémon descriptions and abilities
