@@ -1,6 +1,6 @@
 # The Retro Pokédex
 
-A React-based app that emulates the classic Pokemon player experience of exploring a Pokédex - styled in a manner that is reminiscent of an old-school Game Boy interface.
+A React-based app that emulates the classic Pokémon player experience of exploring a Pokédex - styled in a manner that is reminiscent of an old-school Game Boy interface.
 <br>
 Here's to hoping that, you too, will slide into the deep depths of nostalgia as you navigate this Pokédex! Have fun!
 
