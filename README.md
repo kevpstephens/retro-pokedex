@@ -39,13 +39,13 @@ Here's to hoping that, you too, will slide into the deep depths of nostalgia as 
 
 <h1 align="center">📦 Features 📦</h1>
 
-    •	🔍 Search Pokémon by name or ID
-    •	🎲 Random, Next, and Previous Pokémon navigation
-    •	🧭 URL-based navigation with scroll position memory
-    •	🎨 Game Boy–style pixel art UI with animated Pokéball
-    •	🏠 Custom landing page with hover-activated retro Pikachu
-    •	🔁 Custom hover transitions and tooltips
-    •	🧪 Error handling for invalid searches and missing data
+- 🔍 Search Pokémon by name or ID
+- 🎲 Random, Next, and Previous Pokémon navigation
+- 🧭 URL-based navigation with scroll position memory
+- 🎨 Game Boy–style pixel art UI with animated Pokéball
+- 🏠 Custom landing page with hover-activated retro Pikachu
+- 🔁 Custom hover transitions and tooltips
+- 🧪 Error handling for invalid searches and missing data
 
 <br>
 
@@ -83,19 +83,19 @@ npm run dev
 
 <h1 align="center">🛠️ Tech Stack 🛠️</h1>
 
-    •	React.js – Frontend framework
-    •	React Router – For routing between pages and dynamic Pokémon views
-    •	Chart.js + react-chartjs-2 – For stat visualisation
-    •	Axios – For fetching data from the PokéAPI
-    •	Vite – Lightning-fast build tool
-    •	Custom CSS – For Game Boy–inspired UI and animations
+- React.js – Frontend framework
+- React Router – For routing between pages and dynamic Pokémon views
+- Chart.js + react-chartjs-2 – For stat visualisation
+- Axios – For fetching data from the PokéAPI
+- Vite – Lightning-fast build tool
+- Custom CSS – For Game Boy–inspired UI and animations
 
 <br>
 
 <h1 align="center">🤔 Potential Future Enhancements 🤔</h1>
 
-    •	🧬 Evolution Chain Tab
-    •	📜 Pokémon descriptions and abilities
-    •	🔊 Background music toggle
-    •	🗺️ Region filtering (Kanto, Johto, etc.)
-    •	🧪 Unit tests with Jest + React Testing Library
+- 🧬 Evolution Chain Tab
+- 📜 Pokémon descriptions and abilities
+- 🔊 Background music toggle
+- 🗺️ Region filtering (Kanto, Johto, etc.)
+- 🧪 Unit tests with Jest + React Testing Library
