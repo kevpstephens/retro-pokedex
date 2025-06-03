@@ -94,8 +94,9 @@ npm run dev
 
 <h1 align="center">🤔 Potential Future Enhancements 🤔</h1>
 
-- 🧬 Evolution Chain Tab
-- 📜 Pokémon descriptions and abilities
-- 🔊 Background music toggle
-- 🗺️ Region filtering (Kanto, Johto, etc.)
+- 🧬 Evolution chain display
+- 📜 More detailed Pokémon descriptions and abilities
+- 🔊 Background music toggle/classic theme on homepage or home button hover
+- 🗣️ Pokemon battle cries
+- 🗺️ Region filtering (Kanto, Johto, Hoenn etc.) & filtering by generation
 - 🧪 Unit tests with Jest + React Testing Library
